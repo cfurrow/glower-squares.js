@@ -27,6 +27,8 @@ function init(){
 
   setInterval(function(){
     ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
+    ctx.fillStyle = "#0000000";
+    ctx.fillRect(0,0,ctx.canvas.weight,ctx.canvas.height);
     drawRect(ctx,x1,y1,100,100,"#ffde40",true);
     drawRect(ctx,x2,y2,100,100,"#ffdeff",true);
     if(deg1 > Math.Pi * 2){
